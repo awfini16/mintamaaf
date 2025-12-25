@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Permintaan Maaf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            animation: fadeIn 2s ease;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #ff6b81;
+            margin-bottom: 15px;
+            animation: slideDown 1.5s ease;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 25px;
+            animation: fadeIn 3s ease;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: pulse 1.5s infinite;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #ff6b81;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4757;
+            transform: scale(1.1);
+        }
+
+        .hidden-message {
+            margin-top: 20px;
+            color: #333;
+            display: none;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="heart">❤️</div>
+    <h1> BB I'm really sorry...</h1>
+    <p>Aku tau aku salah, mungkin kali ini kesalahannya gabisa dimaafin ya, aku gatau harus gimana lagi aku cuma bisa ngelakuin yang bisa aku lakuin, aku sempetin belajar ngoding ini buat minta maaf ke kamu sayang, aku ga membenarkan, aku ngaku salah soal akun ig kkn tadi aku childish banget, aku juga bukannya dukung kamu atau bantu kamu tapi aku malah nyinggung soal jam tidur kamu, maaf ya sayang aku terlalu over, ini permintaan maaf yang keberapa aku malu, sekali lagi aku akuin akuk salah aku minta maaf. BB I love you, really. Don't be mad too long pls. Aku sempetin bikin ini, aku gamau kita berantem lama-lama.</p>
+
+    <button onclick="showMessage()">Klik Jika Memaafkan</button>
+
+    <div class="hidden-message" id="message">
+        💖 Thank you bb... You really mean to me,Good night and Sleep well tonight bb, maaf gabisa nemenin dulu, I LOVE YOU SO MUCH. 💖
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
